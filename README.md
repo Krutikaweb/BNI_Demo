@@ -1,49 +1,38 @@
-# BNI Demo — Paid.ai-style scaffold
+# BNI — Static Landing
 
-This repository contains a minimal Next.js + TypeScript + Tailwind CSS scaffold with a demo Stripe checkout route.
+This branch contains a lightweight static HTML + CSS landing page inspired by paid.ai. It is intentionally minimal: no build step, no database, and no backend components.
 
-Live demo
+Files
+- index.html — main landing page
+- styles/styles.css — styles
+- .nojekyll — allows GitHub Pages to serve files starting with an underscore (if used)
 
-- Live demo (replace with your deployment URL once you deploy): https://example.vercel.app
+How to preview locally
+1. Clone the repo and checkout the branch:
+   git fetch origin
+   git checkout feat/bni-scaffold
 
-Deploy to Vercel (fast)
+2. Open index.html in your browser (double-click or use a simple static server):
+   - Python 3: python -m http.server 3000
+   - Then open http://localhost:3000
 
-1. Push this branch to GitHub (already done).
-2. Go to https://vercel.com/new and import this repository.
-3. Set these Environment Variables in the Vercel project settings (Environment: Preview & Production):
+Deploying to GitHub Pages
+Option A — Publish from main (recommended simple flow):
+1. Merge this branch into your default branch (e.g., main).
+2. Go to the repo Settings → Pages and select the branch (main) and the root folder (/).
+3. Save — after a minute your site will be available at https://<your-username>.github.io/<repo-name>.
 
-   NEXT_PUBLIC_BASE_URL=https://example.vercel.app
-   NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=pk_test_...
-   STRIPE_SECRET_KEY=sk_test_...
+Option B — Use gh-pages branch:
+1. Create a branch named `gh-pages` and copy the built files (index.html, styles/) to the root of that branch.
+2. In Settings → Pages select `gh-pages` as the source.
 
-4. Deploy. After deployment, replace the Live demo URL above with the actual Vercel URL.
+Other hosting options
+- Netlify or Vercel (drag & drop the folder or connect the repository). These services will serve static HTML with zero config.
 
-How to run locally
+Customizing
+- Replace the placeholder email in the pricing CTA with your real contact address or a simple form provider (Formspree, Netlify Forms).
+- Update brand text & colors in styles/styles.css (CSS variables are at the top).
 
-1. Install dependencies
-
-   npm install
-
-2. Create a .env.local file in the project root with the following values (use Stripe test keys):
-
-   NEXT_PUBLIC_BASE_URL=http://localhost:3000
-   NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=pk_test_...
-   STRIPE_SECRET_KEY=sk_test_...
-
-3. Run the dev server
-
-   npm run dev
-
-4. Open http://localhost:3000
-
-What I added
-
-- Next.js App Router scaffold (app/layout.tsx, app/page.tsx)
-- Reusable components in components/
-- Stripe demo route at app/api/checkout/route.ts (server-side). Uses STRIPE_SECRET_KEY from env.
-
-Notes
-
-- No real secrets were committed. Add your Stripe keys to .env.local before testing checkout or configure them in Vercel.
-- Replace the demo price/priceId logic if you want to use saved Stripe Prices/Products instead of inline price_data.
-- If you want, I can update the README with the final live demo URL once you deploy and share the URL, or I can open a PR with the live demo URL after you confirm deployment.
+If you want, I can:
+- Replace the current branch contents entirely (remove old Next.js files) — I can do that if you confirm.
+- Deploy the static site to GitHub Pages for you (if you give me permission to push to the default branch or tell me to create gh-pages branch).
