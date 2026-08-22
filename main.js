@@ -1,4 +1,5 @@
 // main.js - interactive metric animations and reveal effects
+// (unchanged behavior, count-up uses data-value attributes)
 document.addEventListener('DOMContentLoaded', function(){
   // reveal on scroll
   const io = new IntersectionObserver((entries)=>{
@@ -34,8 +35,6 @@ document.addEventListener('DOMContentLoaded', function(){
       if(progress < 1) requestAnimationFrame(step)
     })
   }
-
-  // simple hover-expand for cards handled in CSS
 
   // set year
   const y = document.getElementById('year')

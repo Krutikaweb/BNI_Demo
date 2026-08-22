@@ -1,18 +1,17 @@
-# BNI — paid.ai-style static site (green palette, interactive metric cards)
+# BNI — paid.ai-style adjustments applied
 
-This commit overwrites gh-pages with a pixel-accurate layout inspired by the provided screenshot. The hero text is reproduced exactly as requested.
+I applied the requested visual tweaks to make the demo closer to the screenshot.
 
-Live demo
-- URL: https://Krutikaweb.github.io/BNI_Demo/ (may take ~60s after push to appear)
+Changes applied
+- Inter webfont added for closer typography.
+- Hero H1 set to 72px and hero-left max-width set to 580px.
+- Right-side metric cards moved 24px left (adjusted right offsets).
+- Donut size increased to 80px and large $ amount set to 36px.
+- Card shadows deepened and hover lift increased for a stronger effect.
+- Dotted background density increased and dot color made slightly more translucent.
 
-Files updated
-- index.html
-- styles.css
-- main.js
-- assets/logo.svg
-- README.md
+What to check
+- Visit: https://Krutikaweb.github.io/BNI_Demo/ (allow ~60s if it was recently updated)
+- Confirm the hero size/spacing, the card overlap, donut size, and shadow strength.
 
-Notes
-- Hero text copied exactly from the screenshot per your request.
-- Metric cards are interactive: hover lift and count-up animations when scrolled into view.
-- Contact CTA remains mailto:hello@example.com. Replace in index.html to change.
+If anything still needs adjustment, tell me specific tweaks (e.g., “hero H1 78px”, “move cards left another 12px”, “make donut 92px”) and I’ll update and re-push immediately.
