@@ -1,29 +1,38 @@
-# BNI Demo — Paid.ai-style scaffold
+# BNI — Static Landing
 
-This repository contains a minimal Next.js + TypeScript + Tailwind CSS scaffold with a demo Stripe checkout route.
+This branch contains a lightweight static HTML + CSS landing page inspired by paid.ai. It is intentionally minimal: no build step, no database, and no backend components.
 
-How to run locally
+Files
+- index.html — main landing page
+- styles/styles.css — styles
+- .nojekyll — allows GitHub Pages to serve files starting with an underscore (if used)
 
-1. Install dependencies
+How to preview locally
+1. Clone the repo and checkout the branch:
+   git fetch origin
+   git checkout feat/bni-scaffold
 
-   npm install
+2. Open index.html in your browser (double-click or use a simple static server):
+   - Python 3: python -m http.server 3000
+   - Then open http://localhost:3000
 
-2. Create a .env.local file in the project root with the following values (use Stripe test keys):
+Deploying to GitHub Pages
+Option A — Publish from main (recommended simple flow):
+1. Merge this branch into your default branch (e.g., main).
+2. Go to the repo Settings → Pages and select the branch (main) and the root folder (/).
+3. Save — after a minute your site will be available at https://<your-username>.github.io/<repo-name>.
 
-   NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=pk_test_...
-   STRIPE_SECRET_KEY=sk_test_...
+Option B — Use gh-pages branch:
+1. Create a branch named `gh-pages` and copy the built files (index.html, styles/) to the root of that branch.
+2. In Settings → Pages select `gh-pages` as the source.
 
-3. Run the dev server
+Other hosting options
+- Netlify or Vercel (drag & drop the folder or connect the repository). These services will serve static HTML with zero config.
 
-   npm run dev
+Customizing
+- Replace the placeholder email in the pricing CTA with your real contact address or a simple form provider (Formspree, Netlify Forms).
+- Update brand text & colors in styles/styles.css (CSS variables are at the top).
 
-What I added
-
-- Next.js App Router scaffold (app/layout.tsx, app/page.tsx)
-- Reusable components in components/
-- Stripe demo route at app/api/checkout/route.ts (server-side). Uses STRIPE_SECRET_KEY from env.
-- README with run steps
-
-Notes
-
-- No real secrets were committed. Add your Stripe keys to .env.local before testing checkout.
+If you want, I can:
+- Replace the current branch contents entirely (remove old Next.js files) — I can do that if you confirm.
+- Deploy the static site to GitHub Pages for you (if you give me permission to push to the default branch or tell me to create gh-pages branch).
