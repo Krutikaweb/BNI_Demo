@@ -13,7 +13,8 @@
 </head>
 <body>
   <div class="dots-bg" aria-hidden="true"></div>
-  <header class="site-header">
+
+  <header class="site-header" id="site-header">
     <div class="wrap header-inner">
       <div class="left">
         <a class="brand" href="#" aria-label="BNI home">
@@ -34,14 +35,32 @@
     </div>
   </header>
 
+  <!-- Logos carousel -->
+  <section class="logos-section" aria-label="Partner logos">
+    <div class="wrap logos-wrap">
+      <div class="logos-viewport" tabindex="0">
+        <div class="logos-track" id="logos-track">
+          <!-- Use placeholder logo repeated; replace with real partner logos if available -->
+          <img src="assets/logo.svg" alt="Logo 1"/>
+          <img src="assets/logo.svg" alt="Logo 2"/>
+          <img src="assets/logo.svg" alt="Logo 3"/>
+          <img src="assets/logo.svg" alt="Logo 4"/>
+          <img src="assets/logo.svg" alt="Logo 5"/>
+          <img src="assets/logo.svg" alt="Logo 6"/>
+          <img src="assets/logo.svg" alt="Logo 7"/>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <main>
-    <section class="hero">
+    <section class="hero" id="hero">
       <div class="wrap hero-inner">
         <div class="hero-left">
-          <h1 class="hero-title">Pricing that keeps up with your agents.</h1>
-          <p class="hero-sub">For companies building and selling AI agents. Know your margins, design your pricing, and prove the value you deliver — all in one place.</p>
+          <h1 class="hero-title reveal">Pricing that keeps up with your agents.</h1>
+          <p class="hero-sub reveal">For companies building and selling AI agents. Know your margins, design your pricing, and prove the value you deliver — all in one place.</p>
 
-          <form class="lead-form" action="mailto:hello@example.com" method="get" onsubmit="location.href='mailto:hello@example.com';return false;">
+          <form class="lead-form reveal" action="mailto:hello@example.com" method="get" onsubmit="location.href='mailto:hello@example.com';return false;">
             <input aria-label="Email" class="email-input" type="email" placeholder="Enter your work email" />
             <button class="btn-cta small" type="submit">Talk to an expert</button>
           </form>
@@ -102,6 +121,16 @@
 
           </div>
         </div>
+      </div>
+      <!-- sentinel observed by IntersectionObserver for collapse -->
+      <div id="hero-sentinel" style="height:1px;visibility:hidden"></div>
+    </section>
+
+    <!-- Additional content sample for scroll -->
+    <section class="features-sample">
+      <div class="wrap">
+        <h2 class="section-title reveal">See exactly what your agents are doing, in real time</h2>
+        <p class="reveal">Paid is the only platform that tracks every action, task and tool call and translates them into human-readable signals...</p>
       </div>
     </section>
   </main>

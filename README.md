@@ -1,17 +1,11 @@
-# BNI — paid.ai-style adjustments applied
+# BNI — logos carousel + header collapse
 
-I applied the requested visual tweaks to make the demo closer to the screenshot.
+This update adds:
+- A partner-logos carousel (auto-scroll, pauses on hover/focus) under the header.
+- Animated header collapse: the large hero collapses into a compact sticky header when scrolling past the hero.
+- Accessibility: honors prefers-reduced-motion and pauses animations when reduced-motion is requested.
 
-Changes applied
-- Inter webfont added for closer typography.
-- Hero H1 set to 72px and hero-left max-width set to 580px.
-- Right-side metric cards moved 24px left (adjusted right offsets).
-- Donut size increased to 80px and large $ amount set to 36px.
-- Card shadows deepened and hover lift increased for a stronger effect.
-- Dotted background density increased and dot color made slightly more translucent.
+Files updated
+- index.html, styles.css, main.js
 
-What to check
-- Visit: https://Krutikaweb.github.io/BNI_Demo/ (allow ~60s if it was recently updated)
-- Confirm the hero size/spacing, the card overlap, donut size, and shadow strength.
-
-If anything still needs adjustment, tell me specific tweaks (e.g., “hero H1 78px”, “move cards left another 12px”, “make donut 92px”) and I’ll update and re-push immediately.
+Check the live demo after ~60s: https://Krutikaweb.github.io/BNI_Demo/
