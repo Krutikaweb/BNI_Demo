@@ -3,123 +3,105 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>BNI — AI Product Platform</title>
-  <meta name="description" content="BNI — AI product landing inspired by paid.ai. Lightweight static site with responsive layout and subtle animations." />
-  <meta property="og:title" content="BNI — AI Product Platform" />
-  <meta property="og:description" content="Launch your AI product—showcase features, pricing, and capture interest." />
-  <meta name="theme-color" content="#4f46e5" />
+  <title>BNI — Pricing that keeps up with your agents</title>
+  <meta name="description" content="Pricing that keeps up with your agents. Lightweight static demo inspired by paid.ai layout." />
+  <meta name="theme-color" content="#0b4a2f" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <div class="dots-bg"></div>
   <header class="site-header">
-    <div class="wrap">
-      <a class="brand" href="#">BNI</a>
-      <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
-      <nav class="nav">
-        <a href="#features">Features</a>
+    <div class="wrap header-inner">
+      <div class="left">
+        <a class="brand" href="#" aria-label="BNI home">
+          <img src="assets/logo.svg" alt="BNI" class="logo" />
+        </a>
+      </div>
+
+      <nav class="center-nav" aria-label="Main navigation">
+        <a href="#products">Products</a>
+        <a href="#resources">Resources</a>
         <a href="#pricing">Pricing</a>
-        <a href="#testimonials">Testimonials</a>
-        <a href="#faq">FAQ</a>
-        <a class="cta" href="mailto:hello@example.com">Contact</a>
       </nav>
+
+      <div class="right">
+        <a class="btn-outline login" href="#">Login ▸</a>
+        <a class="btn-cta" href="mailto:hello@example.com">Talk to an expert</a>
+      </div>
     </div>
   </header>
 
   <main>
     <section class="hero">
       <div class="wrap hero-inner">
-        <div class="hero-copy">
-          <h1 class="reveal">Launch your AI product—faster.</h1>
-          <p class="lead reveal">Beautifully simple landing pages that convert. No heavy frameworks — static, responsive, and ready to publish.</p>
-          <p class="hero-ctas reveal">
-            <a class="btn primary" href="#pricing">Get started</a>
-            <a class="btn ghost" href="#features">See features</a>
-          </p>
+        <div class="hero-left">
+          <h1 class="hero-title">Pricing that keeps up with your agents.</h1>
+          <p class="hero-sub">For companies building and selling AI agents. Know your margins, design your pricing, and prove the value you deliver — all in one place.</p>
+
+          <form class="lead-form" action="mailto:hello@example.com" method="get" onsubmit="location.href='mailto:hello@example.com';return false;">
+            <input aria-label="Email" class="email-input" type="email" placeholder="Enter your work email" />
+            <button class="btn-cta small" type="submit">Talk to an expert</button>
+          </form>
         </div>
-        <div class="hero-art">
-          <div class="card-grid">
-            <div class="card card-a">Simple UI</div>
-            <div class="card card-b">Clear pricing</div>
-            <div class="card card-c">Fast deploy</div>
+
+        <div class="hero-right">
+          <div class="doc-mock">
+            <div class="doc-paper">
+              <div class="doc-header">
+                <img src="assets/logo.svg" alt="paid" />
+                <div class="shimmer-line short"></div>
+                <div class="shimmer-line long"></div>
+              </div>
+              <ul class="doc-list">
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+            </div>
+
+            <div class="metric-card top-card">
+              <div class="card-kicker">MARGIN PER CUSTOMER</div>
+              <div class="card-body">
+                <div class="metric-left">
+                  <div class="donut"><span>68%</span></div>
+                </div>
+                <div class="metric-right">
+                  <div class="metric-large">$4,280</div>
+                  <div class="metric-sub">Hooli Inc · per month</div>
+                </div>
+              </div>
+              <div class="card-footer">
+                <div>
+                  <div class="muted">REVENUE</div>
+                  <div class="value">$6,290</div>
+                </div>
+                <div>
+                  <div class="muted">COST</div>
+                  <div class="value">$2,010</div>
+                </div>
+                <div>
+                  <div class="muted">MARGIN</div>
+                  <div class="value">$4,280</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="credit-card bottom-card">
+              <div class="credit-kicker">CREDIT GRANT</div>
+              <div class="credit-body">
+                <div class="credit-amount">+ $5,000</div>
+                <div class="credit-note">Bonus credits granted to Hooli Inc. Auto-reload at $500.</div>
+              </div>
+              <div class="credit-footer">Used this period: $3,712 / $5,000</div>
+            </div>
+
           </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="features" class="section">
-      <div class="wrap">
-        <h2 class="section-title reveal">Product features</h2>
-        <p class="section-sub reveal">Everything you need to explain your product and help visitors decide.</p>
-        <div class="features">
-          <article class="feature reveal">
-            <div class="thumb">⚡</div>
-            <h3>Fast to launch</h3>
-            <p>Static HTML/CSS so you can publish to GitHub Pages, Netlify, or Vercel instantly.</p>
-          </article>
-          <article class="feature reveal">
-            <div class="thumb">🧭</div>
-            <h3>Clear messaging</h3>
-            <p>Hero, benefits, and pricing sections designed to convert visitors into leads.</p>
-          </article>
-          <article class="feature reveal">
-            <div class="thumb">🔒</div>
-            <h3>No backend needed</h3>
-            <p>Use mailto or a simple form provider for contact — no servers required for the demo site.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="pricing" class="section pricing">
-      <div class="wrap">
-        <h2 class="section-title reveal">Pricing</h2>
-        <p class="section-sub reveal">Simple, predictable plans. Pick what fits your team.</p>
-        <div class="pricing-grid">
-          <div class="plan reveal">
-            <div class="plan-head">Pro</div>
-            <div class="plan-price">$49<span class="per">/mo</span></div>
-            <ul class="plan-features">
-              <li>All core features</li>
-              <li>Email support</li>
-              <li>Monthly reports</li>
-            </ul>
-            <a class="btn primary" href="mailto:hello@example.com">Contact to buy</a>
-          </div>
-          <div class="plan muted reveal">
-            <div class="plan-head">Enterprise</div>
-            <div class="plan-price">Custom</div>
-            <ul class="plan-features">
-              <li>Unlimited seats</li>
-              <li>Custom integrations</li>
-              <li>Dedicated support</li>
-            </ul>
-            <a class="btn ghost" href="#">Request demo</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="testimonials" class="section testimonials">
-      <div class="wrap">
-        <h2 class="section-title reveal">What customers say</h2>
-        <div class="test-grid">
-          <blockquote class="reveal">“We launched a landing page in minutes — the design converted well.”<cite>— Product Lead</cite></blockquote>
-          <blockquote class="reveal">“Simple, clean, and fast to deploy.”<cite>— Founder</cite></blockquote>
-        </div>
-      </div>
-    </section>
-
-    <section id="faq" class="section">
-      <div class="wrap">
-        <h2 class="section-title reveal">FAQ</h2>
-        <div class="faq-list">
-          <details class="reveal"><summary>Is this a ready product?</summary><p>Yes — a static demo. Use it as a starting point to build production features.</p></details>
-          <details class="reveal"><summary>Can I accept payments?</summary><p>Not included by default. We can add Stripe Checkout or a payment widget on request.</p></details>
-          <details class="reveal"><summary>How do I host it?</summary><p>Merge gh-pages or upload the static files to any host — GitHub Pages, Netlify, or Vercel work well.</p></details>
         </div>
       </div>
     </section>
   </main>
+
+  <button class="chat-toggle" aria-label="Open chat">💬</button>
 
   <footer class="site-footer">
     <div class="wrap footer-inner">
