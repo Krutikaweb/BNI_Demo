@@ -3,139 +3,134 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>BNI — AI Product Landing</title>
-  <meta name="description" content="BNI — Lightweight landing page inspired by paid.ai. Informational site, no backend required." />
-  <meta property="og:title" content="BNI — AI Product Landing" />
-  <meta property="og:description" content="A lightweight, responsive landing page template inspired by paid.ai." />
+  <title>BNI — AI Product Platform</title>
+  <meta name="description" content="BNI — AI product landing inspired by paid.ai. Lightweight static site with responsive layout and subtle animations." />
+  <meta property="og:title" content="BNI — AI Product Platform" />
+  <meta property="og:description" content="Launch your AI product—showcase features, pricing, and capture interest." />
   <meta name="theme-color" content="#4f46e5" />
-  <link rel="stylesheet" href="styles/styles.css" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="/">BNI</a>
+    <div class="wrap">
+      <a class="brand" href="#">BNI</a>
+      <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
       <nav class="nav">
         <a href="#features">Features</a>
         <a href="#pricing">Pricing</a>
+        <a href="#testimonials">Testimonials</a>
         <a href="#faq">FAQ</a>
+        <a class="cta" href="mailto:hello@example.com">Contact</a>
       </nav>
-      <a class="btn btn-ghost" href="#pricing">Get started</a>
     </div>
   </header>
 
   <main>
     <section class="hero">
-      <div class="container hero-inner">
+      <div class="wrap hero-inner">
         <div class="hero-copy">
-          <h1>Launch your AI product—faster.</h1>
-          <p class="lead">A clean, lightweight landing page template inspired by paid.ai. No build step, no database — just HTML & CSS so you can host anywhere.</p>
-          <p class="hero-ctas">
-            <a class="btn btn-primary" href="#pricing">Get started</a>
-            <a class="btn btn-outline" href="#features">See features</a>
+          <h1 class="reveal">Launch your AI product—faster.</h1>
+          <p class="lead reveal">Beautifully simple landing pages that convert. No heavy frameworks — static, responsive, and ready to publish.</p>
+          <p class="hero-ctas reveal">
+            <a class="btn primary" href="#pricing">Get started</a>
+            <a class="btn ghost" href="#features">See features</a>
           </p>
         </div>
         <div class="hero-art">
-          <!-- Decorative card stack -->
-          <div class="card-stack">
-            <div class="card card-1">AI Product</div>
-            <div class="card card-2">Easy Pricing</div>
-            <div class="card card-3">Fast Deploy</div>
+          <div class="card-grid">
+            <div class="card card-a">Simple UI</div>
+            <div class="card card-b">Clear pricing</div>
+            <div class="card card-c">Fast deploy</div>
           </div>
         </div>
       </div>
     </section>
 
     <section id="features" class="section">
-      <div class="container">
-        <h2 class="section-title">Built for speed</h2>
-        <p class="section-sub">Everything you need to showcase your AI product and convert visitors — without the complexity.</p>
-        <div class="grid features-grid">
-          <div class="feature">
-            <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2v6" stroke="#4f46e5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 12h16" stroke="#4f46e5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M6 20h12" stroke="#4f46e5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            <h3>Fast to deploy</h3>
-            <p>No build step required — just upload static files to GitHub Pages, Netlify, or any static host.</p>
+      <div class="wrap">
+        <h2 class="section-title reveal">Product features</h2>
+        <p class="section-sub reveal">Everything you need to explain your product and help visitors decide.</p>
+        <div class="features">
+          <article class="feature reveal">
+            <div class="thumb">⚡</div>
+            <h3>Fast to launch</h3>
+            <p>Static HTML/CSS so you can publish to GitHub Pages, Netlify, or Vercel instantly.</p>
+          </article>
+          <article class="feature reveal">
+            <div class="thumb">🧭</div>
+            <h3>Clear messaging</h3>
+            <p>Hero, benefits, and pricing sections designed to convert visitors into leads.</p>
+          </article>
+          <article class="feature reveal">
+            <div class="thumb">🔒</div>
+            <h3>No backend needed</h3>
+            <p>Use mailto or a simple form provider for contact — no servers required for the demo site.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing" class="section pricing">
+      <div class="wrap">
+        <h2 class="section-title reveal">Pricing</h2>
+        <p class="section-sub reveal">Simple, predictable plans. Pick what fits your team.</p>
+        <div class="pricing-grid">
+          <div class="plan reveal">
+            <div class="plan-head">Pro</div>
+            <div class="plan-price">$49<span class="per">/mo</span></div>
+            <ul class="plan-features">
+              <li>All core features</li>
+              <li>Email support</li>
+              <li>Monthly reports</li>
+            </ul>
+            <a class="btn primary" href="mailto:hello@example.com">Contact to buy</a>
           </div>
-          <div class="feature">
-            <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 6v6l4 2" stroke="#4f46e5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="12" r="10" stroke="#4f46e5" stroke-width="1.5"/></svg>
-            <h3>Clean design</h3>
-            <p>Modern, minimal layout with a clear call-to-action and pricing section modeled after popular AI product sites.</p>
-          </div>
-          <div class="feature">
-            <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="3" width="18" height="18" rx="2" stroke="#4f46e5" stroke-width="1.5"/><path d="M3 9h18" stroke="#4f46e5" stroke-width="1.5" stroke-linecap="round"/></svg>
-            <h3>No backend</h3>
-            <p>Pure HTML and CSS — use mailto links for contact or wire up a simple form service when needed.</p>
+          <div class="plan muted reveal">
+            <div class="plan-head">Enterprise</div>
+            <div class="plan-price">Custom</div>
+            <ul class="plan-features">
+              <li>Unlimited seats</li>
+              <li>Custom integrations</li>
+              <li>Dedicated support</li>
+            </ul>
+            <a class="btn ghost" href="#">Request demo</a>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="pricing" class="section pricing-section">
-      <div class="container">
-        <h2 class="section-title">Pricing</h2>
-        <p class="section-sub">Simple pricing to start. No obligations — information only.</p>
-        <div class="pricing-grid">
-          <div class="pricing-card">
-            <div class="price-header">Pro</div>
-            <div class="price-amount">$49<span class="per">/mo</span></div>
-            <ul class="price-features">
-              <li>All core features</li>
-              <li>Priority email support</li>
-              <li>Monthly usage reports</li>
-            </ul>
-            <div class="price-cta">
-              <a class="btn btn-primary" href="mailto:hello@example.com">Contact to buy</a>
-            </div>
-          </div>
-          <div class="pricing-card muted">
-            <div class="price-header">Enterprise</div>
-            <div class="price-amount">Custom</div>
-            <ul class="price-features">
-              <li>Unlimited seats</li>
-              <li>Custom integrations</li>
-              <li>SLA & onboarding</li>
-            </ul>
-            <div class="price-cta">
-              <a class="btn btn-outline" href="#">Request demo</a>
-            </div>
-          </div>
+    <section id="testimonials" class="section testimonials">
+      <div class="wrap">
+        <h2 class="section-title reveal">What customers say</h2>
+        <div class="test-grid">
+          <blockquote class="reveal">“We launched a landing page in minutes — the design converted well.”<cite>— Product Lead</cite></blockquote>
+          <blockquote class="reveal">“Simple, clean, and fast to deploy.”<cite>— Founder</cite></blockquote>
         </div>
       </div>
     </section>
 
     <section id="faq" class="section">
-      <div class="container">
-        <h2 class="section-title">FAQ</h2>
+      <div class="wrap">
+        <h2 class="section-title reveal">FAQ</h2>
         <div class="faq-list">
-          <details>
-            <summary>Is there a backend or database?</summary>
-            <p>No. This template is a static informational site — it uses no database or server components by default.</p>
-          </details>
-          <details>
-            <summary>Can I accept payments?</summary>
-            <p>You can add Stripe Checkout or embed a payment widget, but this starter does not include live payments out of the box.</p>
-          </details>
-          <details>
-            <summary>How do I deploy?</summary>
-            <p>See the README for quick instructions to deploy to GitHub Pages, Netlify, or Vercel.</p>
-          </details>
+          <details class="reveal"><summary>Is this a ready product?</summary><p>Yes — a static demo. Use it as a starting point to build production features.</p></details>
+          <details class="reveal"><summary>Can I accept payments?</summary><p>Not included by default. We can add Stripe Checkout or a payment widget on request.</p></details>
+          <details class="reveal"><summary>How do I host it?</summary><p>Merge gh-pages or upload the static files to any host — GitHub Pages, Netlify, or Vercel work well.</p></details>
         </div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container footer-inner">
-      <div>© <span id="year"></span> BNI — All rights reserved.</div>
-      <div class="footer-links">
+    <div class="wrap footer-inner">
+      <div>© <span id="year"></span> BNI</div>
+      <nav class="footer-nav">
         <a href="#">Privacy</a>
         <a href="#">Terms</a>
-      </div>
+      </nav>
     </div>
   </footer>
 
-  <script>
-    // Set current year
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+  <script src="main.js"></script>
 </body>
 </html>
